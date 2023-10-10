@@ -1,0 +1,12 @@
+ALGORITHM swap
+VAR
+    x INTEGER := -1;
+    y INTEGER := 13;
+    z INTEGER := 20;
+    temp INTEGER;
+BEGIN
+    temp:= x;
+    x := y;
+    y := z;
+    z := temp;
+END
