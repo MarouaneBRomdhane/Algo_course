@@ -1,0 +1,14 @@
+ALGORITHM counting_chars
+VAR
+    Z : STRING = "hello World.";
+    i,output : INTEGER;
+BEGIN
+    FOR i FROM min TO max STEP Z  DO
+        SWITCH (Z[i]) DO
+            default : output; BREAK;
+            case CHAR : output := output+1; BREAK;
+            case '.' : output := output+1; BREAK;
+        END_SWITCH
+    END_FOR
+    Write ("the number of characters in hello world. is", output);
+END

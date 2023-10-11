@@ -1,0 +1,16 @@
+ALGORITHM pgcd
+VAR
+    i, gcd, n1, n2: INTEGER;
+BEGIN
+    REPEAT
+        Write ("Enter 2 Int greater than 0");
+        Read(n1);
+        Read(n2);
+    UNTIL (n1 > 0  AND n2 > 0)
+    FOR i FROM 1 TO i <= n1 AND i <= n2 STEP 1  DO
+        IF (n1 % i =0 AND n2 %i = 0) THEN
+            gcd := i;
+        END_IF
+    END_FOR
+    Write("P.G.C.D of n1 and n2 is",gcd);
+END
